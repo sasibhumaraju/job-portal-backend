@@ -1,0 +1,34 @@
+package com.sasibhumaraju.job_portal.model;
+
+import ch.qos.logback.core.read.ListAppender;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+@Entity
+public class JobPosting {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
+
+    @ManyToOne
+    @JoinColumn(name = "employer")
+    @JsonBackReference
+    private AppUser employer;
+
+    @OneToMany( mappedBy = "jobPosting", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    private List<Apply> applies;
+
+    private String companyName;
+    private String designation;
+    private String comment;
+
+}
