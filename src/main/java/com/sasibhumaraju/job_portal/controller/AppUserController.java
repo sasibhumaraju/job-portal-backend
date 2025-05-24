@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/app-users")
-@CrossOrigin("*")
+@CrossOrigin("https://job-portal-360.web.app")
 public class AppUserController {
 
     @Autowired

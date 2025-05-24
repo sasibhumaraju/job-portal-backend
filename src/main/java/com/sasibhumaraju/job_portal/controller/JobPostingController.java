@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/job-postings")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin("https://job-portal-360.web.app")
 public class JobPostingController {
 
     @Autowired

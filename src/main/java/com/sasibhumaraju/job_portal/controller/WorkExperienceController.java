@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/work-experiences")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin("https://job-portal-360.web.app")
 public class WorkExperienceController {
 
     @Autowired
