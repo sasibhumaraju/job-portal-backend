@@ -25,6 +25,8 @@ public class JobPostingService {
 
     public JobPostingDTO getJobPosting(String id) {
         JobPosting jP = jobPostingRepository.findById(id).orElse(null);
+//        System.out.println(jP);
+//        return null;
         return JobPostingMapper.toDTO(Objects.requireNonNull(jP));
     }
 

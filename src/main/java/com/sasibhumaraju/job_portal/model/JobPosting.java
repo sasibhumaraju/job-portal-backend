@@ -29,6 +29,11 @@ public class JobPosting {
 
     private String companyName;
     private String designation;
+
+    @Column(columnDefinition = "TEXT")
     private String comment;
+
+    @Column(nullable = true, columnDefinition = "TEXT" )
+    private String jobLink;
 
 }

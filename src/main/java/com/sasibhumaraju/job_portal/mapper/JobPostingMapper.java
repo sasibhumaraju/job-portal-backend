@@ -7,7 +7,7 @@ import com.sasibhumaraju.job_portal.model.JobPosting;
 public class JobPostingMapper {
 
     public static JobPostingDTO toDTO(JobPosting jobPosting) {
-        return new JobPostingDTO(jobPosting.getId(), jobPosting.getEmployer().getId(), jobPosting.getEmployer().getEmail(), jobPosting.getCompanyName(), jobPosting.getDesignation(), jobPosting.getComment());
+        return new JobPostingDTO(jobPosting.getId(), jobPosting.getEmployer().getId(), jobPosting.getEmployer().getEmail(), jobPosting.getCompanyName(), jobPosting.getDesignation(), jobPosting.getComment(), jobPosting.getJobLink());
     }
 
     public static JobPosting toModel(JobPostingDTO jobPostingDTO, AppUser employer) {
@@ -17,6 +17,7 @@ public class JobPostingMapper {
         jobPosting.setCompanyName(jobPostingDTO.getCompanyName());
         jobPosting.setDesignation(jobPostingDTO.getDesignation());
         jobPosting.setComment(jobPostingDTO.getComment());
+        jobPosting.setJobLink(jobPostingDTO.getJobLink());
         return jobPosting;
     }
 }
