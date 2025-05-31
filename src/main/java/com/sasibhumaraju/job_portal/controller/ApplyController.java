@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("api/v1/applies")
-@CrossOrigin(origins = {"https://joobpoortal.web.app","https://job-portal-360.web.app","http://localhost:5173"})
+@CrossOrigin(origins = {"https://jobspoortal.web.app","https://job-portal-360.web.app","http://localhost:5173"})
 public class ApplyController {
 
     @Autowired
