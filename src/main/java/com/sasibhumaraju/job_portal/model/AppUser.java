@@ -25,7 +25,7 @@ public class AppUser {
     private String phone;
 
     @Enumerated(EnumType.STRING)
-    @NonNull
+    @Column(nullable = false)
     private Role role;
 
     @OneToMany(mappedBy = "appUser", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)

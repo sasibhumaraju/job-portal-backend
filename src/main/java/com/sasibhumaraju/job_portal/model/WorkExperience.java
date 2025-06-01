@@ -24,6 +24,8 @@ public class WorkExperience {
     private String companyName;
     private String yearsWorked;
     private String designation;
+
+    @Column(columnDefinition = "TEXT")
     private String comment;
 
 }
