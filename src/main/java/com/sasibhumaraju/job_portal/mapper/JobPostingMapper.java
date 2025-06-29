@@ -1,7 +1,7 @@
 package com.sasibhumaraju.job_portal.mapper;
 
 import com.sasibhumaraju.job_portal.DTO.JobPostingDTO;
-import com.sasibhumaraju.job_portal.model.AppUser;
+import com.sasibhumaraju.job_portal.user.AppUser;
 import com.sasibhumaraju.job_portal.model.JobPosting;
 
 public class JobPostingMapper {

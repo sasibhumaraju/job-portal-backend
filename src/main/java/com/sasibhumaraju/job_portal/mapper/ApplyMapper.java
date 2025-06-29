@@ -2,7 +2,7 @@ package com.sasibhumaraju.job_portal.mapper;
 
 import com.sasibhumaraju.job_portal.DTO.ApplyDTO;
 import com.sasibhumaraju.job_portal.DTO.ApplyDTODeep;
-import com.sasibhumaraju.job_portal.model.AppUser;
+import com.sasibhumaraju.job_portal.user.AppUser;
 import com.sasibhumaraju.job_portal.model.Apply;
 import com.sasibhumaraju.job_portal.model.JobPosting;
 

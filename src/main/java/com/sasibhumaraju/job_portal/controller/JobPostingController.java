@@ -16,7 +16,7 @@ public class JobPostingController {
     @Autowired
     private JobPostingService jobPostingService;
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public JobPostingDTO getJobPosting(@PathVariable String id) {
         return jobPostingService.getJobPosting(id);
     }
@@ -26,12 +26,12 @@ public class JobPostingController {
         return jobPostingService.getAllJobPostings();
     }
 
-    @GetMapping("app-users/{appUserID}")
+    @GetMapping("/app-users/{appUserID}")
     public List<JobPostingDTO> getAllJobPostingsByAppUser(@PathVariable String appUserID) {
         return jobPostingService.getAllJobPostingsByAppUser(appUserID);
     }
 
-    @GetMapping("search")
+    @GetMapping("/search")
     public List<JobPostingDTO> getAllJobPostingsByKeyword(@RequestParam String keyword) {
         System.out.println("search method called -> keyword is "  + keyword+ "<-");
         return jobPostingService.getAllJobPostingsByKeyword(keyword);
@@ -42,16 +42,14 @@ public class JobPostingController {
         return jobPostingService.addJobPosting(jobPostingDTO);
     }
 
-    @PutMapping("{id}")
+    @PutMapping("/{id}")
     public JobPostingDTO updateJobPosting(@PathVariable String id, @RequestBody JobPostingDTO jobPostingDTO) {
         return jobPostingService.updateJobPosting(id,jobPostingDTO);
     }
 
-    @DeleteMapping("{id}")
+    @DeleteMapping("/{id}")
     public void deleteJobPosting(@PathVariable String id) {
         jobPostingService.deleteJobPOsting(id);
     }
-
-
 
 }

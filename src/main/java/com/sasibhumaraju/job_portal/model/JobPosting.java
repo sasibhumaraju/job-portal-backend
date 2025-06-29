@@ -1,8 +1,7 @@
 package com.sasibhumaraju.job_portal.model;
 
-import ch.qos.logback.core.read.ListAppender;
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.sasibhumaraju.job_portal.user.AppUser;
 import jakarta.persistence.*;
 import lombok.*;
 

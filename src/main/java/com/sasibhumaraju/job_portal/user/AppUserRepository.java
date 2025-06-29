@@ -1,9 +1,10 @@
-package com.sasibhumaraju.job_portal.repository;
+package com.sasibhumaraju.job_portal.user;
 
-import com.sasibhumaraju.job_portal.model.AppUser;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
 
 public interface AppUserRepository extends JpaRepository<AppUser, String> {
 
-    AppUser findByEmail(String email);
+    Optional<AppUser> findByEmail(String email);
 }

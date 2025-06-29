@@ -2,11 +2,10 @@ package com.sasibhumaraju.job_portal.service;
 
 import com.sasibhumaraju.job_portal.DTO.WorkExperienceDTO;
 import com.sasibhumaraju.job_portal.mapper.WorkExperienceMapper;
-import com.sasibhumaraju.job_portal.model.AppUser;
+import com.sasibhumaraju.job_portal.user.AppUser;
 import com.sasibhumaraju.job_portal.model.WorkExperience;
-import com.sasibhumaraju.job_portal.repository.AppUserRepository;
+import com.sasibhumaraju.job_portal.user.AppUserRepository;
 import com.sasibhumaraju.job_portal.repository.WorkExperienceRepository;
-import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
 package com.sasibhumaraju.job_portal.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.sasibhumaraju.job_portal.user.AppUser;
 import jakarta.persistence.*;
 import lombok.*;
 

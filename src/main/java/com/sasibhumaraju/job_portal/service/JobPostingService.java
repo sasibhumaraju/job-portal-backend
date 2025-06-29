@@ -2,14 +2,13 @@ package com.sasibhumaraju.job_portal.service;
 
 import com.sasibhumaraju.job_portal.DTO.JobPostingDTO;
 import com.sasibhumaraju.job_portal.mapper.JobPostingMapper;
-import com.sasibhumaraju.job_portal.model.AppUser;
+import com.sasibhumaraju.job_portal.user.AppUser;
 import com.sasibhumaraju.job_portal.model.JobPosting;
-import com.sasibhumaraju.job_portal.repository.AppUserRepository;
+import com.sasibhumaraju.job_portal.user.AppUserRepository;
 import com.sasibhumaraju.job_portal.repository.JobPostingRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;

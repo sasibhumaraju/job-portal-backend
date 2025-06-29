@@ -16,7 +16,7 @@ import java.util.Arrays;
 public class PerformanceAspect {
 //    public static final Logger LOGGER = LoggerFactory.getLogger(PerformanceAspect.class);
     private static final String pointCutpointCutClassPathForMethods = "execution(* com.sasibhumaraju.job_portal.controller.JobPostingController.*(..)) || " +
-            "execution(* com.sasibhumaraju.job_portal.controller.AppUserController.*(..)) ||" +
+            "execution(* com.sasibhumaraju.job_portal.user.AppUserController.*(..)) ||" +
             "execution(* com.sasibhumaraju.job_portal.controller.ApplyController.*(..)) ||" +
             "execution(* com.sasibhumaraju.job_portal.controller.WorkExperienceController.*(..))";
 
