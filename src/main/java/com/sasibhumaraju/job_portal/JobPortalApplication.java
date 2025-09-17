@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 public class JobPortalApplication {
 
 	public static void main(String[] args) {
-		Dotenv dotenv = Dotenv.load();  // Loads .env from project root
-		dotenv.entries().forEach(entry ->
-				System.setProperty(entry.getKey(), entry.getValue())
-		);
+//		Dotenv dotenv = Dotenv.load();  // Loads .env from project root
+//		dotenv.entries().forEach(entry ->
+//				System.setProperty(entry.getKey(), entry.getValue())
+//		);
 		SpringApplication.run(JobPortalApplication.class, args);
 	}
 
